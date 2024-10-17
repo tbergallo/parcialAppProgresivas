@@ -1,0 +1,158 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  align-content: center;
+  overflow-y: scroll; /* Asegura scroll vertical si es necesario */
+}
+
+/* Header */
+.header {
+  background-color: #116530;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reel */
+#containerReel {
+  margin: 20px;
+  align-content: center;
+  padding-bottom: 80px; /* Altura equivalente a la capture-box */
+  box-sizing: border-box; /* Asegura que el padding se compute bien */
+  overflow-y: auto; /* Permite que haga scroll si es necesario */
+  min-height: calc(100vh - 125px); /* Ocupar todo el espacio disponible */
+}
+
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Capture Box */
+.capture-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Asegura una altura fija */
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: auto;
+}
+
+.btn-capture {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 60px; /* Ensure the button has a specific width */
+  height: 60px; /* Ensure the button has a specific height */
+  border-radius: 50%; /* Make the button circular */
+  background-color: #28a745; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  font-size: 2.5rem; /* Adjust font size for better visibility */
+  line-height: 1; /* Ensure no extra space around the emoji */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+#cameraEmoji {
+  padding-bottom: 12px;
+}
+
+
+.btn-capture2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  align-content: center;
+}
+
+.btnCapturarBox {
+  display: flex;               /* Conviértelo en un contenedor flex */
+  justify-content: center;     /* Centra horizontalmente */
+  align-items: center;         /* Centra verticalmente */
+  width: 100%;    
+}
+
+/* Camera View */
+.camera-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+/* Capture Button */
+.capture-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 2rem;
+}
+
+/* Preview View */
+.preview-view {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.photo-preview img {
+  width: 100%;               /* Hace que la imagen ocupe el 100% del ancho */
+  height: 100%;              /* Hace que la imagen ocupe el 100% del alto */
+  object-fit: cover;         /* Asegura que la imagen rellene el contenedor */
+}
+
+.photo-preview {
+  width: 300px;
+  height: 300px;
+  background-color: grey;
+  margin-bottom: 20px;
+  align-self: center;
+  margin: 75px auto auto auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Coloca los inputs en columna */
+  align-items: center; /* Centra los inputs y botones */
+  gap: 10px; /* Espacio entre los elementos */
+  padding-top: 10px;
+
+}
+
+.button-group {
+  display: flex; /* Alinea los botones en fila */
+  gap: 10px; /* Espacio entre los botones */
+}
+
